@@ -1,0 +1,7 @@
+<h1>Register for free!</h1>
+<form method="post" action=".">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <input class='btn btn-block btn-primary' type="submit" value="Registrar" />
+</form>
